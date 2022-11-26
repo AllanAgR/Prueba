@@ -1,0 +1,7 @@
+setIconImage(new ImageIcon(getClass().getResource("src/Img/favicon.png")).getImage());
+
+    @Override
+    public Image getIconImage(){
+        Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("Img/favicon.png"));
+        return retValue;
+    }
